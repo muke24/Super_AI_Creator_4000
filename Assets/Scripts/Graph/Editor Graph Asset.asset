@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1851603978299350049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: Format prompt
+  graph: {fileID: 11400000}
+  position: {x: -1416, y: -520}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -1851603978299350049}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: 'Reply with all the script names (and its respective class it derives
+    from if one exists) in this format: "**Script1:MonoBehaviour** **Script2:CustomClass1**
+    **Script3:*" ect.'
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: 'Reply with all the script names (and its respective class it derives from
+    if one exists) in this format: "**Script1:MonoBehaviour** **Script2:CustomClass1**
+    **Script3:*" ect.'
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0c061b20403ce4eb1c6a9dd82adcb1, type: 3}
+  m_Name: Editor Graph Asset
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8188066215208512574}
+  - {fileID: 8495997961806487035}
+  - {fileID: 8038911759003163771}
+  - {fileID: -1851603978299350049}
+  - {fileID: 4365472098756785419}
+  - {fileID: 1004466369816359949}
+  - {fileID: 4315066301264489355}
+  isProcessing: 0
+--- !u!114 &1004466369816359949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fdc0265e64ad54495d393e893491f8, type: 3}
+  m_Name: Create Scripts And Classes
+  m_EditorClassIdentifier: 
+  nodeName: 
+  graph: {fileID: 11400000}
+  position: {x: -424, y: -408}
+  ports:
+    keys:
+    - gptResponse
+    - scriptsProcessed
+    values:
+    - _fieldName: gptResponse
+      _node: {fileID: 1004466369816359949}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: response
+        node: {fileID: 4365472098756785419}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: scriptsProcessed
+      _node: {fileID: 1004466369816359949}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  gptResponse: 
+  scriptsProcessed: 0
+  isProcessing: 0
+--- !u!114 &4315066301264489355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a4af4432c590c46b76ef0314c6ca03, type: 3}
+  m_Name: Math
+  m_EditorClassIdentifier: 
+  nodeName: 
+  graph: {fileID: 11400000}
+  position: {x: -1128, y: -808}
+  ports:
+    keys:
+    - output
+    - New Variable
+    values:
+    - _fieldName: output
+      _node: {fileID: 4315066301264489355}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Variable 1
+      _node: {fileID: 4315066301264489355}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 8188066215208512574}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  stringSpaces: 1
+  output: 
+  mathType: 0
+--- !u!114 &4365472098756785419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3143a6935a0c8d14d9767bce6152d624, type: 3}
+  m_Name: Request
+  m_EditorClassIdentifier: 
+  nodeName: 
+  graph: {fileID: 11400000}
+  position: {x: -680, y: -440}
+  ports:
+    keys:
+    - model
+    - temperature
+    - content
+    - response
+    values:
+    - _fieldName: model
+      _node: {fileID: 4365472098756785419}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: temperature
+      _node: {fileID: 4365472098756785419}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: content
+      _node: {fileID: 4365472098756785419}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: response
+      _node: {fileID: 4365472098756785419}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: gptResponse
+        node: {fileID: 1004466369816359949}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  saveBandwidth: 0
+  model: gpt-4
+  temperature: 1
+  content: 'I need to create a First person shooter in Unity. Reply with all the
+    script names (and its respective class it derives from if one exists) in this
+    format: "**Script1:MonoBehaviour** **Script2:CustomClass1** **Script3:*" ect.'
+  response: "Creating a First Person Shooter (FPS) in Unity involves many scripts
+    with varied functionalities. Here's a general simplified list of script names
+    and their base classes:\n\n**1. PlayerController:Monobehaviour**\n    \n**2.
+    CameraController:Monobehaviour**\n    \n**3. GunController:Monobehaviour**\n   
+    \n**4. BulletController:Monobehaviour**\n    \n**5. EnemyAIController:Monobehaviour**\n   
+    \n**6. EnemyHealth:Monobehaviour**\n    \n**7. PlayerHealth:Monobehaviour**\n   
+    \n**8. GameManager:Monobehaviour**\n    \n**9. ScoreManager:Monobehaviour**\n   
+    \n**10. AmmoManager:Monobehaviour**\n    \n**11. SpawnManager:Monobehaviour**\n   
+    \n**12. UIManager:Monobehaviour**\n    \n**13. AudioManager:Monobehaviour**\n\nRemember,
+    these are only the primary scripts. Depending on the complexity of your game,
+    you might need more. For example, you might need separate scripts to handle power-ups,
+    object interactions, complex AI behaviors, different weapon types etc.\n\nAnother
+    thing to note is that typically in a complex game, you would not be deriving
+    all these scripts from `MonoBehaviour`. It is not recommended to derive all scripts
+    from `MonoBehaviour`. For example, you could create a custom base class like
+    `Entity` and then have `Player` and `Enemy` derived from this `Entity` class.
+    This would allow you to reuse some common behavior and attributes that both of
+    these classes would share like Health, Speed etc. \n\nUnity also provides a lot
+    of interfaces like `IPointerEnterHandler`, `IPointerExitHandler` etc. which you
+    might end up using. Additionally, you might create some `Enums` and `Structs`
+    as well. You could also use `ScriptableObject` for a lot of things like GameSettings,
+    Levels, etc.\n\nThis list can be made much more modular and efficient using advanced
+    principles of object-oriented programming, but this basic list will be enough
+    to get you started. Depending on the specifics of your FPS and its mechanics,
+    this list can be customised to suit your needs."
+  isProcessing: 0
+  requestTimeout: 5
+  canSendRq: 0
+  storedValues:
+  - model: gpt-4
+    temperature: 1
+    content: 'I need to create a First person shooter in Unity. Reply with all the
+      script names in this format: "*Script1* *Script2* *Script3*" ect.'
+    response: '"PlayerController, CameraController, WeaponController, EnemyAI, BulletScript,
+      HealthScript, HUDScript, InventorySystem, LoadScene, PauseMenu, ScoreTracker,
+      GameOverManager, AnimationManager, SoundManager"'
+--- !u!114 &8038911759003163771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: Engine
+  graph: {fileID: 11400000}
+  position: {x: -1416, y: -648}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8038911759003163771}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: in Unity.
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: in Unity.
+--- !u!114 &8188066215208512574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: Create Prompt
+  graph: {fileID: 11400000}
+  position: {x: -1416, y: -904}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8188066215208512574}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: New Variable
+        node: {fileID: 4315066301264489355}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: I need to create a
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: I need to create a
+--- !u!114 &8495997961806487035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: Genre
+  graph: {fileID: 11400000}
+  position: {x: -1416, y: -776}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: 8495997961806487035}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: First person shooter
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: First person shooter
