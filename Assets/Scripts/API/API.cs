@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.IO;
+using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -417,6 +419,52 @@ public class API : Singleton<API>
 		}
 
 		yield break;
+	}
+
+	public string Send(string role, string message, float temperature, string model)
+	{
+		ComplexRequest rq = CustomRequest(message, role, model, temperature);
+		string jsonData = JsonUtility.ToJson(rq);
+
+		HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+		request.Method = "POST";
+		request.ContentType = "application/json";
+		request.Headers["Authorization"] = "Bearer " + apiKeys[curKey];
+
+		using (StreamWriter streamWriter = new StreamWriter(request.GetRequestStream()))
+		{
+			streamWriter.Write(jsonData);
+			streamWriter.Flush();
+			streamWriter.Close();
+		}
+
+		string responseContent = null;
+
+		try
+		{
+			HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+			using (StreamReader streamReader = new StreamReader(response.GetResponseStream()))
+			{
+				responseContent = streamReader.ReadToEnd();
+				Response parsedResponse = JsonUtility.FromJson<Response>(responseContent);
+				foreach (Choice choice in parsedResponse.choices)
+				{
+					return choice.message.content;
+				}
+			}
+		}
+		catch (WebException ex)
+		{
+			using (StreamReader streamReader = new StreamReader(ex.Response.GetResponseStream()))
+			{
+				string errorResponse = streamReader.ReadToEnd();
+				Debug.Log("Failed to send request to the GPT API: " + ex.Message);
+				Debug.Log("Server responded with: " + errorResponse);
+			}
+			return null;
+		}
+
+		return null;
 	}
 
 	IEnumerator SendGPTMessage(string message, float temperature, string model)

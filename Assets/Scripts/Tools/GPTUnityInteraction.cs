@@ -161,6 +161,21 @@ public class {className}{extendsClause}
 		}
 	}
 
+	public static string[] GetScriptNamesFromResponse(string response)
+	{
+		// Parse the response to get a dictionary of script names and base classes
+		Dictionary<string, string> scriptsAndBases = ParseScriptAndBaseClasses(response);
+		List<string> scriptNames = new List<string>();
+		// Create a script and add a class for each script name found
+		foreach (var pair in scriptsAndBases)
+		{
+			string scriptName = pair.Key;
+			scriptNames.Add(scriptName);
+		}
+
+		return scriptNames.ToArray();
+	}
+
 	public static void CreateScriptsAndClassesFromResponse(string response, CreateScriptsAndClassesNode node)
 	{
 		// Parse the response to get a dictionary of script names and base classes

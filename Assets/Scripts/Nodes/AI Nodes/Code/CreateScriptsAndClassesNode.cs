@@ -10,7 +10,7 @@ public class CreateScriptsAndClassesNode : Node
 	public string gptResponse;
 
 	[Output]
-	public bool scriptsProcessed;
+	public string scriptsProcessed;
 
 	[HideInInspector]
 	public bool isProcessing = false;
@@ -19,20 +19,27 @@ public class CreateScriptsAndClassesNode : Node
 	protected override void Init()
 	{
 		base.Init();
-		
 	}
 
 	public override object GetValue(NodePort port)
 	{
-		if (!isProcessing)
+		if (canProcess)
 		{
-			GPTUnityInteraction.CreateScriptsAndClassesFromResponse(GetInputValue("gptResponse", this.gptResponse), this);
+			canProcess = false;
+			if (!isProcessing)
+			{
+				GPTUnityInteraction.CreateScriptsAndClassesFromResponse(GetInputValue("gptResponse", this.gptResponse), this);
 
-			return true;
+				return GPTUnityInteraction.GetScriptNamesFromResponse(GetInputValue("gptResponse", this.gptResponse));
+			}
+			else
+			{
+				return false;
+			}
 		}
 		else
 		{
-			return false;
+			return lastValue;
 		}
 	}
 }

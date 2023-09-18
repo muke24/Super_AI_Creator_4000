@@ -1,5 +1,216 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6286846308197383341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a4af4432c590c46b76ef0314c6ca03, type: 3}
+  m_Name: Math
+  m_EditorClassIdentifier: 
+  nodeName: 
+  canProcess: 0
+  graph: {fileID: 11400000}
+  position: {x: -984, y: -456}
+  ports:
+    keys:
+    - output
+    - dynamicInput_0
+    - dynamicInput_1
+    - dynamicInput_2
+    - dynamicInput_3
+    - dynamicInput_4
+    values:
+    - _fieldName: output
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: dynamicInput_0
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 8188066215208512574}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_1
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 8495997961806487035}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_2
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: 8038911759003163771}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_3
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: output
+        node: {fileID: -1851603978299350049}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_4
+      _node: {fileID: -6286846308197383341}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  stringSpaces: 1
+  output: 'I need to create a First person shooter in Unity. Reply with all the script
+    names (and its respective class it derives from if one exists) in this format:
+    "**Script1:MonoBehaviour** **Script2:CustomClass1** **Script3:**" ect. '
+  mathType: 0
+--- !u!114 &-3946022585677853987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: 
+  canProcess: 0
+  graph: {fileID: 11400000}
+  position: {x: -1224, y: 184}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -3946022585677853987}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: 
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: You are an instance of chatGPT running inside of Unity. You have one goal
+    - to create a basic game. How
+--- !u!114 &-3079201324217337936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b544bd5e0375d449a52e582bc837f4e, type: 3}
+  m_Name: Variable
+  m_EditorClassIdentifier: 
+  nodeName: Double Check
+  canProcess: 0
+  graph: {fileID: 11400000}
+  position: {x: -1272, y: -40}
+  ports:
+    keys:
+    - output
+    values:
+    - _fieldName: output
+      _node: {fileID: -3079201324217337936}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  variableType: 0
+  stringValue: 'Here a good example responses: "**GameManager:MonoBehaviour**, **Animations:MonoBehaviour**,
+    **MainMenu:MonoBehaviour**, **AudioManager:MonoBehaviour**, **CameraMovement:MonoBehaviour**.'
+  floatValue: 0
+  intValue: 0
+  boolValue: 0
+  output: 'Here a good example responses: "**GameManager:MonoBehaviour**, **Animations:MonoBehaviour**,
+    **MainMenu:MonoBehaviour**, **AudioManager:MonoBehaviour**, **CameraMovement:MonoBehaviour**.'
+--- !u!114 &-1886887218734198268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e9b7b5f420fae4baefd425c13797cd, type: 3}
+  m_Name: If
+  m_EditorClassIdentifier: 
+  nodeName: 
+  canProcess: 0
+  graph: {fileID: 11400000}
+  position: {x: -744, y: -136}
+  ports:
+    keys:
+    - a
+    - b
+    values:
+    - _fieldName: a
+      _node: {fileID: -1886887218734198268}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: b
+      _node: {fileID: -1886887218734198268}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  type: 0
+  a: 
+  b: 
 --- !u!114 &-1851603978299350049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,8 +224,9 @@ MonoBehaviour:
   m_Name: Variable
   m_EditorClassIdentifier: 
   nodeName: Format prompt
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -1416, y: -520}
+  position: {x: -1272, y: -184}
   ports:
     keys:
     - output
@@ -23,7 +235,10 @@ MonoBehaviour:
       _node: {fileID: -1851603978299350049}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: dynamicInput_3
+        node: {fileID: -6286846308197383341}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -31,13 +246,13 @@ MonoBehaviour:
   variableType: 0
   stringValue: 'Reply with all the script names (and its respective class it derives
     from if one exists) in this format: "**Script1:MonoBehaviour** **Script2:CustomClass1**
-    **Script3:*" ect.'
+    **Script3:**" ect.'
   floatValue: 0
   intValue: 0
   boolValue: 0
   output: 'Reply with all the script names (and its respective class it derives from
     if one exists) in this format: "**Script1:MonoBehaviour** **Script2:CustomClass1**
-    **Script3:*" ect.'
+    **Script3:**" ect.'
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,8 +272,140 @@ MonoBehaviour:
   - {fileID: -1851603978299350049}
   - {fileID: 4365472098756785419}
   - {fileID: 1004466369816359949}
-  - {fileID: 4315066301264489355}
+  - {fileID: 1638319844683326774}
+  - {fileID: -3079201324217337936}
+  - {fileID: -6286846308197383341}
+  - {fileID: 270580143562727582}
+  - {fileID: -3946022585677853987}
+  - {fileID: -1886887218734198268}
   isProcessing: 0
+--- !u!114 &270580143562727582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3143a6935a0c8d14d9767bce6152d624, type: 3}
+  m_Name: Request
+  m_EditorClassIdentifier: 
+  nodeName: 
+  canProcess: 0
+  graph: {fileID: 11400000}
+  position: {x: -984, y: 184}
+  ports:
+    keys:
+    - model
+    - temperature
+    - content
+    - response
+    values:
+    - _fieldName: model
+      _node: {fileID: 270580143562727582}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: temperature
+      _node: {fileID: 270580143562727582}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: content
+      _node: {fileID: 270580143562727582}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: response
+      _node: {fileID: 270580143562727582}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  model: gpt-4
+  temperature: 1
+  content: 
+  response: 
+  isProcessing: 0
+--- !u!114 &503883888886926304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Llama Index Testing
+  m_EditorClassIdentifier: Assembly-CSharp::LlamaIndexTestingNode
+  nodeName: 
+  graph: {fileID: 11400000}
+  position: {x: -440, y: -696}
+  ports:
+    keys:
+    - pythonDll
+    - pythonFolder
+    - pythonLibFolder
+    - output
+    values:
+    - _fieldName: pythonDll
+      _node: {fileID: 503883888886926304}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pythonFolder
+      _node: {fileID: 503883888886926304}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pythonLibFolder
+      _node: {fileID: 503883888886926304}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 503883888886926304}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  pythonFile: {fileID: 102900000, guid: 8ec62f927e619a142af4c3187683457c, type: 3}
+  pythonDll: C:\Users\Peter\AppData\Local\Programs\Python\Python38\python38.dll
+  pythonFolder: C:\Users\Peter\AppData\Local\Programs\Python\Python38\
+  pythonLibFolder: C:\Users\Peter\AppData\Local\Programs\Python\Python38\Lib
+  output: 
 --- !u!114 &1004466369816359949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,8 +419,9 @@ MonoBehaviour:
   m_Name: Create Scripts And Classes
   m_EditorClassIdentifier: 
   nodeName: 
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -424, y: -408}
+  position: {x: -488, y: -424}
   ports:
     keys:
     - gptResponse
@@ -93,7 +441,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: scriptsProcessed
       _node: {fileID: 1004466369816359949}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 1
@@ -103,7 +451,7 @@ MonoBehaviour:
   gptResponse: 
   scriptsProcessed: 0
   isProcessing: 0
---- !u!114 &4315066301264489355
+--- !u!114 &1638319844683326774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,19 +460,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8a4af4432c590c46b76ef0314c6ca03, type: 3}
-  m_Name: Math
+  m_Script: {fileID: 11500000, guid: 6d34ebc2207c3934195ea33ce59f9ca5, type: 3}
+  m_Name: Python
   m_EditorClassIdentifier: 
   nodeName: 
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -1128, y: -808}
+  position: {x: -1112, y: -856}
   ports:
     keys:
+    - pythonDll
+    - pythonFolder
+    - pythonLibFolder
     - output
-    - New Variable
     values:
+    - _fieldName: pythonDll
+      _node: {fileID: 1638319844683326774}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pythonFolder
+      _node: {fileID: 1638319844683326774}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: pythonLibFolder
+      _node: {fileID: 1638319844683326774}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
     - _fieldName: output
-      _node: {fileID: 4315066301264489355}
+      _node: {fileID: 1638319844683326774}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
@@ -132,21 +510,12 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Variable 1
-      _node: {fileID: 4315066301264489355}
-      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 8188066215208512574}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  stringSpaces: 1
+  pythonFile: {fileID: 102900000, guid: 8ec62f927e619a142af4c3187683457c, type: 3}
+  pythonDllFile: {fileID: -1121539586, guid: 14cd8ec33972cb146b2c87c8b7e407be, type: 3}
+  pythonDll: C:\Python38\python38.dll
+  pythonFolder: C:\Python38\
+  pythonLibFolder: C:\Users\Peter\AppData\Local\Programs\Python\Python38\Lib
   output: 
-  mathType: 0
 --- !u!114 &4365472098756785419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,9 +528,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3143a6935a0c8d14d9767bce6152d624, type: 3}
   m_Name: Request
   m_EditorClassIdentifier: 
-  nodeName: 
+  nodeName: Script Names
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -680, y: -440}
+  position: {x: -712, y: -520}
   ports:
     keys:
     - model
@@ -208,48 +578,21 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  saveBandwidth: 0
   model: gpt-4
   temperature: 1
   content: 'I need to create a First person shooter in Unity. Reply with all the
     script names (and its respective class it derives from if one exists) in this
-    format: "**Script1:MonoBehaviour** **Script2:CustomClass1** **Script3:*" ect.'
-  response: "Creating a First Person Shooter (FPS) in Unity involves many scripts
-    with varied functionalities. Here's a general simplified list of script names
-    and their base classes:\n\n**1. PlayerController:Monobehaviour**\n    \n**2.
-    CameraController:Monobehaviour**\n    \n**3. GunController:Monobehaviour**\n   
-    \n**4. BulletController:Monobehaviour**\n    \n**5. EnemyAIController:Monobehaviour**\n   
-    \n**6. EnemyHealth:Monobehaviour**\n    \n**7. PlayerHealth:Monobehaviour**\n   
-    \n**8. GameManager:Monobehaviour**\n    \n**9. ScoreManager:Monobehaviour**\n   
-    \n**10. AmmoManager:Monobehaviour**\n    \n**11. SpawnManager:Monobehaviour**\n   
-    \n**12. UIManager:Monobehaviour**\n    \n**13. AudioManager:Monobehaviour**\n\nRemember,
-    these are only the primary scripts. Depending on the complexity of your game,
-    you might need more. For example, you might need separate scripts to handle power-ups,
-    object interactions, complex AI behaviors, different weapon types etc.\n\nAnother
-    thing to note is that typically in a complex game, you would not be deriving
-    all these scripts from `MonoBehaviour`. It is not recommended to derive all scripts
-    from `MonoBehaviour`. For example, you could create a custom base class like
-    `Entity` and then have `Player` and `Enemy` derived from this `Entity` class.
-    This would allow you to reuse some common behavior and attributes that both of
-    these classes would share like Health, Speed etc. \n\nUnity also provides a lot
-    of interfaces like `IPointerEnterHandler`, `IPointerExitHandler` etc. which you
-    might end up using. Additionally, you might create some `Enums` and `Structs`
-    as well. You could also use `ScriptableObject` for a lot of things like GameSettings,
-    Levels, etc.\n\nThis list can be made much more modular and efficient using advanced
-    principles of object-oriented programming, but this basic list will be enough
-    to get you started. Depending on the specifics of your FPS and its mechanics,
-    this list can be customised to suit your needs."
+    format: "**Script1:MonoBehaviour** **Script2:CustomClass1** **Script3:**" ect.
+    Here a good example responses: "**GameManager:MonoBehaviour**, **Animations:MonoBehaviour**,
+    **MainMenu:MonoBehaviour**, **AudioManager:MonoBehaviour**, **CameraMovement:MonoBehaviour**.            '
+  response: '**PlayerController:MonoBehaviour**, **EnemyAI:MonoBehaviour**, **WeaponScript:MonoBehaviour**,
+    **HealthScript:MonoBehaviour**, **AmmunitionScript:MonoBehaviour**, **ScoreManager:MonoBehaviour**,
+    **PhysicsMovement:MonoBehaviour**, **BulletScript:MonoBehaviour**, **SoundEffectsManager:MonoBehaviour**,
+    **LevelManager:MonoBehaviour**, **PickUpScript:MonoBehaviour**, **SpawnEnemies:MonoBehaviour**,
+    **GameController:MonoBehaviour**, **CrosshairScript:MonoBehaviour**, **PlayerAnimations:MonoBehaviour**,
+    **CameraFollow:MonoBehaviour**, **GameUI:MonoBehaviour**, **InventorySystem:MonoBehaviour**,
+    **SaveLoadSystem:MonoBehaviour**.'
   isProcessing: 0
-  requestTimeout: 5
-  canSendRq: 0
-  storedValues:
-  - model: gpt-4
-    temperature: 1
-    content: 'I need to create a First person shooter in Unity. Reply with all the
-      script names in this format: "*Script1* *Script2* *Script3*" ect.'
-    response: '"PlayerController, CameraController, WeaponController, EnemyAI, BulletScript,
-      HealthScript, HUDScript, InventorySystem, LoadScene, PauseMenu, ScoreTracker,
-      GameOverManager, AnimationManager, SoundManager"'
 --- !u!114 &8038911759003163771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,8 +606,9 @@ MonoBehaviour:
   m_Name: Variable
   m_EditorClassIdentifier: 
   nodeName: Engine
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -1416, y: -648}
+  position: {x: -1272, y: -312}
   ports:
     keys:
     - output
@@ -273,7 +617,10 @@ MonoBehaviour:
       _node: {fileID: 8038911759003163771}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: dynamicInput_2
+        node: {fileID: -6286846308197383341}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -297,8 +644,9 @@ MonoBehaviour:
   m_Name: Variable
   m_EditorClassIdentifier: 
   nodeName: Create Prompt
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -1416, y: -904}
+  position: {x: -1272, y: -568}
   ports:
     keys:
     - output
@@ -308,8 +656,8 @@ MonoBehaviour:
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: New Variable
-        node: {fileID: 4315066301264489355}
+      - fieldName: dynamicInput_0
+        node: {fileID: -6286846308197383341}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -334,8 +682,9 @@ MonoBehaviour:
   m_Name: Variable
   m_EditorClassIdentifier: 
   nodeName: Genre
+  canProcess: 0
   graph: {fileID: 11400000}
-  position: {x: -1416, y: -776}
+  position: {x: -1272, y: -440}
   ports:
     keys:
     - output
@@ -344,7 +693,10 @@ MonoBehaviour:
       _node: {fileID: 8495997961806487035}
       _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: dynamicInput_1
+        node: {fileID: -6286846308197383341}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
